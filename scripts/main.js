@@ -1,7 +1,9 @@
-// togel and resvonsive navigation
+// toggle and responsive navigation
 const navSlide = () => {
-    const  burger = document.querySelector(".burger");
-    const navLists = document.querySelector(nav);
+    const burger = document.querySelector(".burger");
+    const navLists = document.querySelector("nav");
+
+    if (!burger || !navLists) return;
 
     burger.addEventListener("click", () => {
         navLists.classList.toggle("nav-active");
@@ -9,7 +11,7 @@ const navSlide = () => {
     });
 };
 
-navSlide ();
+navSlide();
 
 // clear form before unload
 window.onbeforeunload = () =>  {

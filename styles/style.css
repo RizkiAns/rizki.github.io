@@ -29,7 +29,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-h1,h2,h3,h4,h5 strong {
+h1, h2, h3, h4, h5, strong {
     color: var(--primaryTextcolor);
 }  
 
@@ -166,7 +166,7 @@ nav ul a {
 
 .hero-name {
     font-size: 3rem;
-    font-weight: 700%;
+    font-weight: 700;
     margin: 0.5rem 0 1rem; 
 }
 
@@ -177,7 +177,7 @@ nav ul a {
 .hero-right img {
     width: 50%;
     border-radius: 100%;
-    box-shadow: #5d51e8;
+    box-shadow: 0 12px 30px rgba(93, 81, 232, 0.18);
 }
 
 .hero-right {
@@ -218,7 +218,7 @@ nav ul a {
     width: fit-content;
     margin: 0 auto;
     padding: 1rem 1.3rem;
-    border: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .service-icon svg {
@@ -237,7 +237,8 @@ nav ul a {
 
 }
 
-.portfolios .pre-title .section-title {
+.portfolios .pre-title,
+.portfolios .section-title {
     margin: auto;
     text-align: center;
 }
@@ -313,11 +314,11 @@ nav ul a {
 }
 
 .education-info p {
-    margin: .6rem 0 1.rem;
+    margin: .6rem 0 1rem;
 }
 
 .education-years {
-    margin-bottom: 3 rem;
+    margin-bottom: 3rem;
 }
 
 /* the dot on line */
@@ -395,7 +396,7 @@ nav ul a {
 .contact-item {
     display: flex;
     gap: 3rem;
-    margin-bottom: 2.rem;
+    margin-bottom: 2rem;
 }
 
 .contact-item-icon {
