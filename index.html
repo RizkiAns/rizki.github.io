@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="id">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="Bcs0rvOVgFT7eEQmLsYpVxWZBk8nj-ZifNe6Ec_-Ge0" />
@@ -22,10 +21,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rizki-fortpolio.vercel.app/" />
     <meta property="og:image" content="https://rizki-fortpolio.vercel.app/styles/gw.jpg" />
-    <title>Portfolio-mandiri</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <meta name="theme-color" content="#111016" />
+    <title>Rizki Aulia Nata Saputra — Portofolio</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/responsive.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -33,7 +31,7 @@
         "name": "Rizki Aulia Nata Saputra",
         "jobTitle": "Mahasiswa IT",
         "description": "Mahasiswa universitas Yatsi Madani yang memiliki keahlian dalam pengembangan web, desain UI/UX, dan SEO.",
-        "image": "https://rizki-fortpolio.vercel.app/styles/gw.jpg"
+        "image": "https://rizki-fortpolio.vercel.app/styles/gw.jpg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Jl. Pendidikan No.1, Pasilian, Kec. Kronjo, Kabupaten Tangerang, Banten",
@@ -47,7 +45,7 @@
           "name": "Freelance"
         },
         "knowsAbout": ["Web Development", "UI/UX Design", "SEO"],
-        "url": "https://rizki-fortpolio.vercel.app/"
+        "url": "https://rizki-fortpolio.vercel.app/",
         "sameAs": ["https://www.linkedin.com/in/rizkians", "https://github.com/rizkians", "https://twitter.com/rizkians"],
         "alumniOf": {
           "@type": "EducationalOrganization",
@@ -63,50 +61,55 @@
     <!-- end of schema org -->
   </head>
   <body>
-    <!-- headre -->
+    <a class="skip-link" href="#main-content">Lewati ke konten</a>
 
     <!-- services -->
-    <header>
+    <header id="top">
       <div class="main-container">
         <div class="nav">
           <div class="logo">
-            <a href="/">RANS</a>
+            <a href="#top" aria-label="Rizki Aulia, ke bagian atas">RANS</a>
           </div>
 
-          <nav>
+          <nav id="primary-navigation" aria-label="Navigasi utama">
             <ul>
-              <li><a href="#services">service</a></li>
-              <li><a href="#portfolios">portfolio</a></li>
-              <li><a href="#skills">skill & education</a></li>
-              <li><a href="#contact">kontak</a></li>
-              <li><a class="btn" href="mailto:rizzkii01@gmail.com?subject=Permintaan%20Resume">minta resume</a></li>
+              <li><a href="#services">Layanan</a></li>
+              <li><a href="#portfolios">Portofolio</a></li>
+              <li><a href="#skills">Tentang</a></li>
+              <li><a href="#contact">Kontak</a></li>
+              <li><a class="btn" href="mailto:rizzkii01@gmail.com?subject=Permintaan%20Resume">Hubungi saya <span aria-hidden="true">↗</span></a></li>
             </ul>
           </nav>
 
-          <div class="burger">
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-            <div class="line-3"></div>
-          </div>
+          <button class="burger" type="button" aria-label="Buka navigasi" aria-expanded="false" aria-controls="primary-navigation">
+            <span></span><span></span>
+          </button>
         </div>
-        <section id="hero">
+        <section id="hero" aria-labelledby="hero-title">
           <div class="hero-left">
-            <h3 class="pre-title">My name is</h3>
-            <h1 class="hero-name">Rizki Aulia <span>Nata Saputra</span></h1>
-            <p>Hallo Nama Saya Rizki Aulia Nata Saputra, saya sedang berkuliah di universitas yang ada di tangerang banten yaitu universitas yatsi madani, saya mengambil program studi ilmu komputer fakultas teknologi dan bisnis</p>
+            <p class="pre-title">Mahasiswa Ilmu Komputer · Tangerang</p>
+            <h1 class="hero-name" id="hero-title">Rizki Aulia <span>Nata Saputra</span></h1>
+            <p>Saya mahasiswa Ilmu Komputer di Universitas Yatsi Madani yang tertarik pada pengembangan web, desain UI/UX, dan teknologi cloud. Saya senang mengubah ide menjadi pengalaman digital yang berguna.</p>
+            <div class="hero-actions">
+              <a class="btn" href="#portfolios">Lihat portofolio <span aria-hidden="true">↘</span></a>
+              <a class="btn btn-secondary" href="#contact">Mari terhubung</a>
+            </div>
           </div>
           <div class="hero-right">
-            <img src="styles/gw.jpg" alt="person standing" />
+            <img src="styles/gw-removebg-preview.png" alt="Rizki Aulia Nata Saputra" />
+            <div class="hero-note"><strong>Terus belajar</strong><span>Merancang. Membangun. Berkembang.</span></div>
           </div>
+          <a class="scroll-hint" href="#services">Jelajahi lebih lanjut</a>
         </section>
       </div>
     </header>
 
     <!-- end of header -->
+    <main id="main-content">
     <section id="services">
       <div class="services main-container">
-        <h3 class="pre-title">services</h3>
-        <h1 class="section-title services-title">spesialized</h1>
+        <h3 class="pre-title">Yang saya kerjakan</h3>
+        <h2 class="section-title services-title">Layanan pilihan</h2>
 
         <div class="grid-3">
           <!-- servis pertama -->
@@ -154,7 +157,7 @@
     <section id="portfolios">
       <div class="portfolios main-container">
         <h3 class="pre-title">My Works</h3>
-        <h1 class="section-title">Sertifikasi course</h1>
+        <h2 class="section-title">Sertifikasi dan kursus</h2>
 
         <div class="grid-3">
           <!-- portfolio 1 -->
@@ -168,8 +171,8 @@
                 <!-- <a href="/"></a> -->
               </div>
               <div class="portfolio-tags">
-                <div>X X X</div>
-                <div>X X X</div>
+                <div>UI/UX</div>
+                <div>Desain</div>
               </div>
               <p>
                 Sertifikat ini menunjukkan keberhasilan dalam menyelesaikan kursus dasar tentang desain UI/UX, yang mencakup konsep dan praktik penting untuk menciptakan antarmuka pengguna yang menarik dan pengalaman pengguna yang optimal.!
@@ -187,8 +190,8 @@
                 <!-- <a href="/"></a> -->
               </div>
               <div class="portfolio-tags">
-                <div>X X X</div>
-                <div>X X X</div>
+                <div>Desain grafis</div>
+                <div>Visual</div>
               </div>
               <p>Sertifikat ini mengonfirmasi kompetensi dalam desain grafis, termasuk pemahaman mendalam tentang prinsip visual dan teknik grafis untuk menciptakan karya desain yang profesional dan estetis.</p>
             </div>
@@ -204,8 +207,8 @@
                 <!-- <a href="/"></a> -->
               </div>
               <div class="portfolio-tags">
-                <div>X X X</div>
-                <div>X X X</div>
+                <div>Google Cloud</div>
+                <div>Komputasi awan</div>
               </div>
               <p>Sertifikat ini menandakan penguasaan konsep dasar komputasi awan (cloud computing) menggunakan platform Google Cloud, termasuk implementasi solusi berbasis cloud yang efisien dan inovatif.!</p>
             </div>
@@ -221,7 +224,7 @@
     <section id="skills">
       <div class="skills main-container">
         <h3 class="pre-title">Learning Path</h3>
-        <h1 class="section-title">Skills & Education</h1>
+        <h2 class="section-title">Pendidikan & keterampilan</h2>
 
         <div class="skills-grid">
           <div class="skills-left">
@@ -233,7 +236,7 @@
               <div class="education-info">
                 <h4 class="education-title">SMKN 1 RONGGA KABUPATEN BANDUNG BARAT</h4>
                 <p>Alumni smkn 1 rongga 2021 dan mengambil jurusan Rekayasa Perangkat Lunak(RPL)</p>
-                <h4 class="education-years">2021-2022</h4>
+                <p class="education-years">2021–2022</p>
               </div>
             </div>
             <!-- education 2 -->
@@ -244,7 +247,7 @@
               <div class="education-info">
                 <h4 class="education-title">SMKN 5 MAUK KABUPATEN TANGERANG</h4>
                 <p>Melanjutkan sekolah di SMKN 5 Mauk dari 2022 hingga lulus di Tangerang dengan mengambil jurusan yang sama</p>
-                <h4 class="education-years">2021-2023</h4>
+                <p class="education-years">2022–2023</p>
               </div>
             </div>
             <!-- education 3 -->
@@ -255,7 +258,7 @@
               <div class="education-info">
                 <h4 class="education-title">Yatsi Madani</h4>
                 <p>melanjutkan studi program s1 di kampus tangerang dengan mengambil jurusan/prodi ilmu komputer</p>
-                <h4 class="education-years">2023-2026</h4>
+                <p class="education-years">2023–sekarang</p>
               </div>
             </div>
           </div>
@@ -287,17 +290,17 @@
         <div class="contact">
           <!-- Bagian Form -->
           <div class="contact-form">
-            <form action="">
+            <form action="mailto:rizzkii01@gmail.com?subject=Pesan%20dari%20portofolio" method="post" enctype="text/plain">
               <div>
-                <input type="text" name="Name" placeholder="Name" required />
+                <input type="text" name="name" placeholder="Nama" autocomplete="name" aria-label="Nama" required />
               </div>
               <div>
-                <input type="email" name="email" placeholder="Email" required />
+                <input type="email" name="email" placeholder="Email" autocomplete="email" aria-label="Email" required />
               </div>
               <div>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                <textarea name="message" id="message" rows="6" placeholder="Ceritakan kebutuhan atau ide Anda" aria-label="Pesan" required></textarea>
               </div>
-              <button class="btn-submit" type="submit">send message</button>
+              <button class="btn-submit" type="submit">Kirim pesan <span aria-hidden="true">↗</span></button>
             </form>
           </div>
 
@@ -335,7 +338,7 @@
               </div>
               <div class="contact-item-detail">
                 <h4>Email</h4>
-                <p>rizzkii01@gmail.com</p>
+                <p><a href="mailto:rizzkii01@gmail.com">rizzkii01@gmail.com</a></p>
               </div>
             </div>
           </div>
@@ -345,6 +348,7 @@
     </section>
 
     <!-- end kontaK -->
+    </main>
 
     <!-- footer -->
     <footer>
